@@ -50,7 +50,7 @@ jobs:
           if-no-files-found: error
 
   deploy-development:
-    uses: Cantonite/terraform-deployment-pipeline/.github/workflows/terraform-deploy.yaml@main
+    uses: Cantonite/.github/workflow-templates/terraform-deploy.yaml@main
     with:
       environment: development
     secrets:
@@ -59,7 +59,7 @@ jobs:
       - ci
 
   deploy-staging:
-    uses: Cantonite/terraform-deployment-pipeline/.github/workflows/terraform-deploy.yaml@main
+    uses: Cantonite/.github/workflow-templates/terraform-deploy.yaml@main
     with:
       environment: staging
     secrets:
@@ -68,7 +68,7 @@ jobs:
       - deploy-development
 
   deploy-production:
-    uses: Cantonite/terraform-deployment-pipeline/.github/workflows/terraform-deploy.yaml@main
+    uses: Cantonite/.github/workflow-templates/terraform-deploy.yaml@main
     with:
       environment: production
     secrets:
