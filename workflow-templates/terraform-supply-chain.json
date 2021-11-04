@@ -1,0 +1,5 @@
+{
+    "name": "Terraform Supply Chain",
+    "description": "Supply chain for Terraform deployments.",
+    "iconName": "githubactions"
+}
